@@ -23,7 +23,7 @@ namespace EACDMLinqUtiliy
         private void Attempts_Load(object sender, EventArgs e)
         {
             dmc = (DMClient)this.Tag;
-            DataTable dt = BbQuery.getAttempts(course_pk, dmc.origUrl, dmc.token);
+            DataTable dt = BbQuery.getAttempts(course_pk, dmc.origUrl, dmc.token); 
           //  atGrid.AutoGenerateColumns = false;
             atGrid.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.DisplayedCells);
             atGrid.DataSource = dt;
