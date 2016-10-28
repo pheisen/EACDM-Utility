@@ -1,0 +1,28 @@
+﻿// qd fields of pool other than data
+parent_pk1	
+pk1	34457
+crsmain_pk1	250
+plirid	
+position	1
+bbmd_asi_type	1
+bbmd_assessmenttype	4
+bbmd_questiontype	1
+qmd_absolutescore_max	1
+qmd_weighting	0
+bbmd_date_added	44:15.2
+bbmd_date_modified	45:10.2
+bbmd_sectiontype	2
+bbmd_is_from_cartridge	N
+bbmd_keywords	
+bbmd_numbertype	1
+bbmd_partialcredit	
+bbmd_orientationtype	1
+bbmd_is_extracredit	N
+bbmd_extra_credit_pts	
+objectbank_pk1	
+title	
+description	
+bbmd_is_disabled	N
+bbmd_negative_points_ind	N
+bbmd_canvas_fullcrdt_ind	N
+bbmd_all_fullcredit_ind	N

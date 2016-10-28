@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91FC66BD-F032-44F9-9D06-BBDF367D3754}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EACDMLinqUtiliy</RootNamespace>
+    <AssemblyName>EACDMLinqUtiliy</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>eac.ico</ApplicationIcon>
+    <TargetZone>Internet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>ftp://209.71.159.19/eac/EACUtility/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <InstallUrl>http://edassess.net/EACUtility/</InstallUrl>
+    <TargetCulture>en-US</TargetCulture>
+    <ProductName>EAC Utility</ProductName>
+    <PublisherName>Educational Assessments Corporation</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttemptRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttemptRecord.Designer.cs">
+      <DependentUpon>AttemptRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attempts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attempts.Designer.cs">
+      <DependentUpon>Attempts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditForm.Designer.cs">
+      <DependentUpon>AddEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginLewis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginLewis.designer.cs">
+      <DependentUpon>LoginLewis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginX.designer.cs">
+      <DependentUpon>LoginX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMobile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginMobile.designer.cs">
+      <DependentUpon>LoginMobile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gradebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gradebook.Designer.cs">
+      <DependentUpon>Gradebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAuth2Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAuth2Test.Designer.cs">
+      <DependentUpon>LoginAuth2Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginXP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginXP.designer.cs" />
+    <Compile Include="LoginXPXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginXPXB.Designer.cs">
+      <DependentUpon>LoginXPXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrlEncode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrlEncode.Designer.cs">
+      <DependentUpon>UrlEncode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD5Maker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MD5Maker.Designer.cs">
+      <DependentUpon>MD5Maker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoodleLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoodleLogin.Designer.cs">
+      <DependentUpon>MoodleLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preceptors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preceptors.Designer.cs">
+      <DependentUpon>Preceptors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PutFile.cs" />
+    <Compile Include="ReadSql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadSql.Designer.cs">
+      <DependentUpon>ReadSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Regex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regex.Designer.cs">
+      <DependentUpon>Regex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sauce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sauce.Designer.cs">
+      <DependentUpon>Sauce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpecialCourse.Designer.cs">
+      <DependentUpon>SpecialCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlFormWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlFormWeb.Designer.cs">
+      <DependentUpon>SqlFormWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DMClient.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddEditForm.resx">
+      <DependentUpon>AddEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttemptRecord.resx">
+      <DependentUpon>AttemptRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attempts.resx">
+      <DependentUpon>Attempts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginLewis.resx">
+      <DependentUpon>LoginLewis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginX.resx">
+      <DependentUpon>LoginX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginMobile.resx">
+      <DependentUpon>LoginMobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gradebook.resx">
+      <DependentUpon>Gradebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAuth2Test.resx">
+      <DependentUpon>LoginAuth2Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginXP.resx" />
+    <EmbeddedResource Include="LoginXPXB.resx">
+      <DependentUpon>LoginXPXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrlEncode.resx">
+      <DependentUpon>UrlEncode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MD5Maker.resx">
+      <DependentUpon>MD5Maker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoodleLogin.resx">
+      <DependentUpon>MoodleLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preceptors.resx">
+      <DependentUpon>Preceptors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadSql.resx">
+      <DependentUpon>ReadSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regex.resx">
+      <DependentUpon>Regex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sauce.resx">
+      <DependentUpon>Sauce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpecialCourse.resx">
+      <DependentUpon>SpecialCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlFormWeb.resx">
+      <DependentUpon>SqlFormWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlForm.resx">
+      <DependentUpon>SqlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentSurveys.resx">
+      <DependentUpon>StudentSurveys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFile.resx">
+      <DependentUpon>UpdateFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <LinqToXsdSchema Include="clientData.xsd">
+      <SubType>Designer</SubType>
+    </LinqToXsdSchema>
+    <None Include="EACDMLinqUtiliy_1_TemporaryKey.pfx" />
+    <None Include="EACDMLinqUtiliy_2_TemporaryKey.pfx" />
+    <None Include="EACDMLinqUtiliy_3_TemporaryKey.pfx" />
+    <None Include="EACDMLinqUtiliy_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SqlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlForm.Designer.cs">
+      <DependentUpon>SqlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentSurveys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentSurveys.Designer.cs">
+      <DependentUpon>StudentSurveys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFile.Designer.cs">
+      <DependentUpon>UpdateFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AttemptRecord.htm" />
+    <Content Include="AttemptRecordFix.htm" />
+    <Content Include="clientData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="eac.ico" />
+    <None Include="Resources\undo_16.png" />
+    <Content Include="login.html" />
+    <Content Include="PlugInFiles.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\QTIUtility\LINQtoXSDLib\LINQtoXSDLib\LINQtoXSDLib.csproj">
+      <Project>{260DE95F-A945-469F-A79C-38EED50F6171}</Project>
+      <Name>LINQtoXSDLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QTIUtility\QTIUtility\QTIUtility.csproj">
+      <Project>{56499d73-333b-4667-a123-d44d180429c4}</Project>
+      <Name>QTIUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WorkingData\" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <TXLINQBinDir Condition="'$(TXLINQBinDir)' == ''">$(ProgramFiles)\LINQ to XSD Preview\Bin</TXLINQBinDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;not-mil</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>001CFF4A5E327895F2CFC08D73638A5D4F464C5E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(TXLINQBinDir)\LinqToXsd.targets" />
+</Project>

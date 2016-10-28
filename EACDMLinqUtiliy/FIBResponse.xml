@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<item_result asi_title="Math" presented="No">
+  <result_metadata>
+    <bbmd_asi_object_id>_6907658_1</bbmd_asi_object_id>
+    <bbmd_result_object_id>_13186387_1</bbmd_result_object_id>
+    <bbmd_resulttype>Item</bbmd_resulttype>
+  </result_metadata>
+  <date>
+    <type_label>Item Creation Time.</type_label>
+    <datetime>2011:11:14T08:09:50</datetime>
+  </date>
+  <response ident_ref="response">
+    <response_form cardinality="Single" render_type="fib" timing="No" response_type="str"/>
+    <response_value response_status="Valid" response_time="-1">2</response_value>
+  </response>
+  <outcomes status="Completed">
+    <score varname="AUTOGRADE" vartype="Decimal" status="Valid">
+      <score_value>1.0</score_value>
+      <score_maximum>1.0</score_maximum>
+    </score>
+    <score varname="MANUALGRADE" vartype="Decimal" status="Valid">
+      <score_value/>
+    </score>
+  </outcomes>
+</item_result>

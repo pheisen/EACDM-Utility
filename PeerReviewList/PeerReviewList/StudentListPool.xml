@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop>
+  <assessment title="Student List">
+    <assessmentmetadata>
+      <bbmd_asi_object_id>_34457_1</bbmd_asi_object_id>
+      <bbmd_asitype>Assessment</bbmd_asitype>
+      <bbmd_assessmenttype>Pool</bbmd_assessmenttype>
+      <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+      <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+      <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+      <bbmd_is_disabled>false</bbmd_is_disabled>
+      <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+      <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+      <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+      <bbmd_numbertype>none</bbmd_numbertype>
+      <bbmd_partialcredit></bbmd_partialcredit>
+      <bbmd_orientationtype>vertical</bbmd_orientationtype>
+      <bbmd_is_extracredit>false</bbmd_is_extracredit>
+      <qmd_absolutescore_max>1.0</qmd_absolutescore_max>
+      <qmd_weighting>0.0</qmd_weighting>
+      <qmd_instructornotes></qmd_instructornotes>
+    </assessmentmetadata>
+    <rubric view="All">
+      <flow_mat class="Block">
+        <material>
+          <mat_extension>
+            <mat_formattedtext type="HTML"/>
+          </mat_extension>
+        </material>
+      </flow_mat>
+    </rubric>
+    <presentation_material>
+      <flow_mat class="Block">
+        <material>
+          <mat_extension>
+            <mat_formattedtext type="HTML">&lt;p&gt;Holds active student list of this course.&lt;/p&gt;</mat_formattedtext>
+          </mat_extension>
+        </material>
+      </flow_mat>
+    </presentation_material>
+    <section>
+      <sectionmetadata>
+        <bbmd_asi_object_id>_34458_1</bbmd_asi_object_id>
+        <bbmd_asitype>Section</bbmd_asitype>
+        <bbmd_assessmenttype>Pool</bbmd_assessmenttype>
+        <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+        <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+        <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+        <bbmd_is_disabled>false</bbmd_is_disabled>
+        <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+        <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+        <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+        <bbmd_numbertype>none</bbmd_numbertype>
+        <bbmd_partialcredit></bbmd_partialcredit>
+        <bbmd_orientationtype>vertical</bbmd_orientationtype>
+        <bbmd_is_extracredit>false</bbmd_is_extracredit>
+        <qmd_absolutescore_max>1.0</qmd_absolutescore_max>
+        <qmd_weighting>0.0</qmd_weighting>
+        <qmd_instructornotes></qmd_instructornotes>
+      </sectionmetadata>
+      <item title="Student MC" maxattempts="0">
+        <itemmetadata>
+          <bbmd_asi_object_id>_34459_1</bbmd_asi_object_id>
+          <bbmd_asitype>Item</bbmd_asitype>
+          <bbmd_assessmenttype>Pool</bbmd_assessmenttype>
+          <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+          <bbmd_questiontype>Multiple Choice</bbmd_questiontype>
+          <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+          <bbmd_is_disabled>false</bbmd_is_disabled>
+          <bbmd_negative_points_ind>N</bbmd_negative_points_ind>
+          <bbmd_canvas_fullcrdt_ind>false</bbmd_canvas_fullcrdt_ind>
+          <bbmd_all_fullcredit_ind>false</bbmd_all_fullcredit_ind>
+          <bbmd_numbertype>none</bbmd_numbertype>
+          <bbmd_partialcredit>true</bbmd_partialcredit>
+          <bbmd_orientationtype>vertical</bbmd_orientationtype>
+          <bbmd_is_extracredit>false</bbmd_is_extracredit>
+          <qmd_absolutescore_max>1.0</qmd_absolutescore_max>
+          <qmd_weighting>0.0</qmd_weighting>
+          <qmd_instructornotes></qmd_instructornotes>
+        </itemmetadata>
+        <presentation>
+          <flow class="Block">
+            <flow class="QUESTION_BLOCK">
+              <flow class="FORMATTED_TEXT_BLOCK">
+                <material>
+                  <mat_extension>
+                    <mat_formattedtext type="HTML">&lt;p&gt;Pick from list below&lt;/p&gt;</mat_formattedtext>
+                  </mat_extension>
+                </material>
+              </flow>
+            </flow>
+            <flow class="RESPONSE_BLOCK">
+              <response_lid ident="response" rcardinality="Single" rtiming="No">
+                <render_choice shuffle="No" minnumber="0" maxnumber="0">
+                  <flow_label class="Block">
+                    <response_label ident="857cbc805595d9030b2710b4d9e95151" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                      <flow_mat class="FORMATTED_TEXT_BLOCK">
+                        <material>
+                          <mat_extension>
+                            <mat_formattedtext type="HTML">&lt;p&gt;Adams, Abigail (aadms)&lt;/p&gt;</mat_formattedtext>
+                          </mat_extension>
+                        </material>
+                      </flow_mat>
+                    </response_label>
+                  </flow_label>
+                  <flow_label class="Block">
+                    <response_label ident="2410691ffaba4e6eee62340095c27c6f" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                      <flow_mat class="FORMATTED_TEXT_BLOCK">
+                        <material>
+                          <mat_extension>
+                            <mat_formattedtext type="HTML">&lt;p&gt;Bell, Brian (brian)&lt;/p&gt;</mat_formattedtext>
+                          </mat_extension>
+                        </material>
+                      </flow_mat>
+                    </response_label>
+                  </flow_label>
+                  <flow_label class="Block">
+                    <response_label ident="a7d4b1c2fc0a59787b3193c34659c389" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                      <flow_mat class="FORMATTED_TEXT_BLOCK">
+                        <material>
+                          <mat_extension>
+                            <mat_formattedtext type="HTML">&lt;p&gt;Bender, Aimee (aimee)&lt;/p&gt;</mat_formattedtext>
+                          </mat_extension>
+                        </material>
+                      </flow_mat>
+                    </response_label>
+                  </flow_label>
+                  <flow_label class="Block">
+                    <response_label ident="dae4100284971a1a8c799198cc4eca9a" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                      <flow_mat class="FORMATTED_TEXT_BLOCK">
+                        <material>
+                          <mat_extension>
+                            <mat_formattedtext type="HTML">&lt;p&gt;Boxer, Barbara (barb)&lt;/p&gt;</mat_formattedtext>
+                          </mat_extension>
+                        </material>
+                      </flow_mat>
+                    </response_label>
+                  </flow_label>
+                  <flow_label class="Block">
+                    <response_label ident="58d6be39398bdd3292675ed3ed4eb4b3" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                      <flow_mat class="FORMATTED_TEXT_BLOCK">
+                        <material>
+                          <mat_extension>
+                            <mat_formattedtext type="HTML">&lt;p&gt;Chatham, Devon (devon)&lt;/p&gt;</mat_formattedtext>
+                          </mat_extension>
+                        </material>
+                      </flow_mat>
+                    </response_label>
+                  </flow_label>
+                  <flow_label class="Block">
+                    <response_label ident="751b0cb4244222e30a60e08da3cb1f46" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                      <flow_mat class="FORMATTED_TEXT_BLOCK">
+                        <material>
+                          <mat_extension>
+                            <mat_formattedtext type="HTML">&lt;p&gt;Cherkas, Rod (rod)&lt;/p&gt;</mat_formattedtext>
+                          </mat_extension>
+                        </material>
+                      </flow_mat>
+                    </response_label>
+                  </flow_label>
+                  <flow_label class="Block">
+                    <response_label ident="7ce35a04b4d98195e69e313837db9607" shuffle="Yes" rarea="Ellipse" rrange="Exact">
+                      <flow_mat class="FORMATTED_TEXT_BLOCK">
+                        <material>
+                          <mat_extension>
+                            <mat_formattedtext type="HTML">&lt;p&gt;Diamond, Aaron (aaron)&lt;/p&gt;</mat_formattedtext>
+                          </mat_extension>
+                        </material>
+                      </flow_mat>
+                    </response_label>
+                  </flow_label>
+                </render_choice>
+              </response_lid>
+            </flow>
+          </flow>
+        </presentation>
+        <resprocessing scoremodel="SumOfScores">
+          <outcomes>
+            <decvar varname="SCORE" vartype="Decimal" defaultval="0.0" minvalue="0.0" maxvalue="1.0"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <varequal respident="response" case="No">857cbc805595d9030b2710b4d9e95151</varequal>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">SCORE.max</setvar>
+            <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">0.0</setvar>
+            <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="857cbc805595d9030b2710b4d9e95151" case="No"/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">100</setvar>
+            <displayfeedback linkrefid="857cbc805595d9030b2710b4d9e95151" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="2410691ffaba4e6eee62340095c27c6f" case="No"/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">100</setvar>
+            <displayfeedback linkrefid="2410691ffaba4e6eee62340095c27c6f" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="a7d4b1c2fc0a59787b3193c34659c389" case="No"/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">100</setvar>
+            <displayfeedback linkrefid="a7d4b1c2fc0a59787b3193c34659c389" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="dae4100284971a1a8c799198cc4eca9a" case="No"/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">100</setvar>
+            <displayfeedback linkrefid="dae4100284971a1a8c799198cc4eca9a" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="58d6be39398bdd3292675ed3ed4eb4b3" case="No"/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">100</setvar>
+            <displayfeedback linkrefid="58d6be39398bdd3292675ed3ed4eb4b3" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="751b0cb4244222e30a60e08da3cb1f46" case="No"/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">100</setvar>
+            <displayfeedback linkrefid="751b0cb4244222e30a60e08da3cb1f46" feedbacktype="Response"/>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="7ce35a04b4d98195e69e313837db9607" case="No"/>
+            </conditionvar>
+            <setvar variablename="SCORE" action="Set">100</setvar>
+            <displayfeedback linkrefid="7ce35a04b4d98195e69e313837db9607" feedbacktype="Response"/>
+          </respcondition>
+        </resprocessing>
+        <itemfeedback ident="correct" view="All">
+          <flow_mat class="Block">
+            <flow_mat class="FORMATTED_TEXT_BLOCK">
+              <material>
+                <mat_extension>
+                  <mat_formattedtext type="HTML"/>
+                </mat_extension>
+              </material>
+            </flow_mat>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="incorrect" view="All">
+          <flow_mat class="Block">
+            <flow_mat class="FORMATTED_TEXT_BLOCK">
+              <material>
+                <mat_extension>
+                  <mat_formattedtext type="HTML"/>
+                </mat_extension>
+              </material>
+            </flow_mat>
+          </flow_mat>
+        </itemfeedback>
+        <itemfeedback ident="857cbc805595d9030b2710b4d9e95151" view="All">
+          <solution view="All" feedbackstyle="Complete">
+            <solutionmaterial>
+              <flow_mat class="Block">
+                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                  <material>
+                    <mat_extension>
+                      <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                  </material>
+                </flow_mat>
+              </flow_mat>
+            </solutionmaterial>
+          </solution>
+        </itemfeedback>
+        <itemfeedback ident="2410691ffaba4e6eee62340095c27c6f" view="All">
+          <solution view="All" feedbackstyle="Complete">
+            <solutionmaterial>
+              <flow_mat class="Block">
+                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                  <material>
+                    <mat_extension>
+                      <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                  </material>
+                </flow_mat>
+              </flow_mat>
+            </solutionmaterial>
+          </solution>
+        </itemfeedback>
+        <itemfeedback ident="a7d4b1c2fc0a59787b3193c34659c389" view="All">
+          <solution view="All" feedbackstyle="Complete">
+            <solutionmaterial>
+              <flow_mat class="Block">
+                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                  <material>
+                    <mat_extension>
+                      <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                  </material>
+                </flow_mat>
+              </flow_mat>
+            </solutionmaterial>
+          </solution>
+        </itemfeedback>
+        <itemfeedback ident="dae4100284971a1a8c799198cc4eca9a" view="All">
+          <solution view="All" feedbackstyle="Complete">
+            <solutionmaterial>
+              <flow_mat class="Block">
+                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                  <material>
+                    <mat_extension>
+                      <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                  </material>
+                </flow_mat>
+              </flow_mat>
+            </solutionmaterial>
+          </solution>
+        </itemfeedback>
+        <itemfeedback ident="58d6be39398bdd3292675ed3ed4eb4b3" view="All">
+          <solution view="All" feedbackstyle="Complete">
+            <solutionmaterial>
+              <flow_mat class="Block">
+                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                  <material>
+                    <mat_extension>
+                      <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                  </material>
+                </flow_mat>
+              </flow_mat>
+            </solutionmaterial>
+          </solution>
+        </itemfeedback>
+        <itemfeedback ident="751b0cb4244222e30a60e08da3cb1f46" view="All">
+          <solution view="All" feedbackstyle="Complete">
+            <solutionmaterial>
+              <flow_mat class="Block">
+                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                  <material>
+                    <mat_extension>
+                      <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                  </material>
+                </flow_mat>
+              </flow_mat>
+            </solutionmaterial>
+          </solution>
+        </itemfeedback>
+        <itemfeedback ident="7ce35a04b4d98195e69e313837db9607" view="All">
+          <solution view="All" feedbackstyle="Complete">
+            <solutionmaterial>
+              <flow_mat class="Block">
+                <flow_mat class="FORMATTED_TEXT_BLOCK">
+                  <material>
+                    <mat_extension>
+                      <mat_formattedtext type="HTML"/>
+                    </mat_extension>
+                  </material>
+                </flow_mat>
+              </flow_mat>
+            </solutionmaterial>
+          </solution>
+        </itemfeedback>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

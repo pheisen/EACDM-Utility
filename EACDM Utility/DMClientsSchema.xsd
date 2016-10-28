@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DMClients"
+           targetNamespace="http://tempuri.org/DMClients.xsd"
+           xmlns:mstns="http://tempuri.org/DMClients.xsd"
+           xmlns="http://tempuri.org/DMClients.xsd"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+           xmlns:msprop="urn:schemas-microsoft-com:xml-msprop"
+           attributeFormDefault="qualified"
+           elementFormDefault="qualified">
+  <xs:element name="DMClients"
+              msdata:IsDataSet="true"
+              msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0"
+                 maxOccurs="unbounded">
+        <xs:element name="DMClients"
+                    msprop:Generator_UserTableName="DMClients"
+                    msprop:Generator_TablePropName="_DMClients">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name"
+                          minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Url"
+                          minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="created"
+                          type="xs:dateTime"
+                          minOccurs="0" />
+              <xs:element name="modified"
+                          type="xs:dateTime"
+                          minOccurs="0" />
+              <xs:element name="token"
+                          minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+﻿#  Bb Version: 8.0.307.0
+# Plugin path: \\ecampus13dfs\bb_content\vi\bb_bb60\plugins\ea-eacdata\config
+# d (base): \\ecampus13dfs\bb_content\vi\bb_bb60\plugins\ea-eacdata\
+-..
+--config
+---props.txt 74 Mar 23, 2009 2:44:31 PM
+--webapp
+---auth.jsp 2880 Mar 23, 2009 2:40:40 PM
+---auth_1.jsp 5827 Mar 25, 2009 6:09:39 AM
+---check.jsp 2636 Mar 23, 2009 2:40:40 PM
+---config.jsp 12175 Mar 23, 2009 2:40:40 PM
+---EACEnviron.jsp 7458 Mar 23, 2009 2:40:40 PM
+---EACFiles.jsp 5733 Mar 23, 2009 2:40:40 PM
+---EACFilesText.jsp 5406 Mar 23, 2009 2:40:40 PM
+---error.jsp 395 Mar 23, 2009 2:40:40 PM
+---getdata.jsp 5466 Mar 23, 2009 2:40:40 PM
+---getsql.jsp 7159 Mar 23, 2009 2:40:40 PM
+---META-INF
+----context.xml 71 Mar 23, 2009 2:40:39 PM
+---WEB-INF
+----bb-manifest.xml 1382 Mar 23, 2009 2:40:39 PM
+----classes
+-----org
+----config
+-----taglibs
+------bbData.tld 3303 Mar 23, 2009 2:40:40 PM
+------bbUI.tld 51396 Mar 23, 2009 2:40:40 PM
+------bbUI.xsl 1093 Mar 23, 2009 2:40:40 PM
+----lib
+-----wrapper.jar 43774 Mar 23, 2009 2:40:40 PM
+----web.xml 520 Mar 23, 2009 2:40:40 PM
+---xgetsqlsbzip.jsp 28707 Mar 23, 2009 2:40:40 PM
+---xgetsqlsbzip_1.jsp 30042 Mar 25, 2009 6:08:09 AM
+File name:	
+Relative Directory:	

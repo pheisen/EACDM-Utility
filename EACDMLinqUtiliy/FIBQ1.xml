@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<item title="Math" maxattempts="0">
+  <itemmetadata>
+    <bbmd_asi_object_id>_6907658_1</bbmd_asi_object_id>
+    <bbmd_asitype>Item</bbmd_asitype>
+    <bbmd_assessmenttype>Test</bbmd_assessmenttype>
+    <bbmd_sectiontype>Subsection</bbmd_sectiontype>
+    <bbmd_questiontype>Fill in the Blank</bbmd_questiontype>
+    <bbmd_is_from_cartridge>false</bbmd_is_from_cartridge>
+    <bbmd_is_disabled>false</bbmd_is_disabled>
+    <bbmd_numbertype>none</bbmd_numbertype>
+    <bbmd_partialcredit>false</bbmd_partialcredit>
+    <bbmd_orientationtype>vertical</bbmd_orientationtype>
+    <bbmd_is_extracredit>false</bbmd_is_extracredit>
+    <qmd_absolutescore_max>1.0</qmd_absolutescore_max>
+    <qmd_weighting>0.0</qmd_weighting>
+    <qmd_instructornotes></qmd_instructornotes>
+  </itemmetadata>
+  <presentation>
+    <flow class="Block">
+      <flow class="QUESTION_BLOCK">
+        <flow class="FORMATTED_TEXT_BLOCK">
+          <material>
+            <mat_extension>
+              <mat_formattedtext type="HTML">The nurse is planning a tube feeding using a 240 mL can of Sustacal. The order reads: Sustacal 1/3 strength per feeding tube at 100mL/hr. For every can of Sustacal that is added to the tube feeding bag the nurse will add ____ can/(s) of water.</mat_formattedtext>
+            </mat_extension>
+          </material>
+        </flow>
+      </flow>
+      <flow class="RESPONSE_BLOCK">
+        <response_str ident="response" rcardinality="Single" rtiming="No">
+          <render_fib charset="us-ascii" encoding="UTF_8" rows="1" columns="127" maxchars="0" prompt="Box" fibtype="String" minnumber="0" maxnumber="0"/>
+        </response_str>
+      </flow>
+    </flow>
+  </presentation>
+  <resprocessing scoremodel="SumOfScores">
+    <outcomes>
+      <decvar varname="SCORE" vartype="Decimal" defaultval="0.0" minvalue="0.0" maxvalue="1.0"/>
+    </outcomes>
+    <respcondition title="c538d1c4a2134a11b312ff1c4754fbc7">
+      <conditionvar>
+        <varequal respident="response" case="No">2</varequal>
+      </conditionvar>
+      <displayfeedback linkrefid="correct" feedbacktype="Response"/>
+      <displayfeedback linkrefid="c538d1c4a2134a11b312ff1c4754fbc7" feedbacktype="Response"/>
+    </respcondition>
+    <respcondition title="incorrect">
+      <conditionvar>
+        <other/>
+      </conditionvar>
+      <setvar variablename="SCORE" action="Set">0.0</setvar>
+      <displayfeedback linkrefid="incorrect" feedbacktype="Response"/>
+    </respcondition>
+  </resprocessing>
+  <itemfeedback ident="correct" view="All">
+    <flow_mat class="Block">
+      <flow_mat class="FORMATTED_TEXT_BLOCK">
+        <material>
+          <mat_extension>
+            <mat_formattedtext type="HTML">1/3 strength = 1 part Sustacal and 3 parts total solution&lt;br /&gt;&lt;br /&gt;3 - 1 = 2 (cans of water to be added)</mat_formattedtext>
+          </mat_extension>
+        </material>
+      </flow_mat>
+    </flow_mat>
+  </itemfeedback>
+  <itemfeedback ident="incorrect" view="All">
+    <flow_mat class="Block">
+      <flow_mat class="FORMATTED_TEXT_BLOCK">
+        <material>
+          <mat_extension>
+            <mat_formattedtext type="HTML">1/3 strength = 1 part Sustacal and 3 parts total solution&lt;br /&gt;  &lt;br /&gt;  3 - 1 = 2 (cans of water to be added)</mat_formattedtext>
+          </mat_extension>
+        </material>
+      </flow_mat>
+    </flow_mat>
+  </itemfeedback>
+  <itemfeedback ident="c538d1c4a2134a11b312ff1c4754fbc7" view="All">
+    <solution view="All" feedbackstyle="Complete">
+      <solutionmaterial>
+        <flow_mat class="Block">
+          <flow_mat class="FORMATTED_TEXT_BLOCK">
+            <material>
+              <mat_extension>
+                <mat_formattedtext type="HTML"/>
+              </mat_extension>
+            </material>
+          </flow_mat>
+        </flow_mat>
+      </solutionmaterial>
+    </solution>
+  </itemfeedback>
+</item>

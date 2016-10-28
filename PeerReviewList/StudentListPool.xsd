@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="questestinterop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="assessment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="assessmentmetadata">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="bbmd_asi_object_id" type="xs:string" />
+                    <xs:element name="bbmd_asitype" type="xs:string" />
+                    <xs:element name="bbmd_assessmenttype" type="xs:string" />
+                    <xs:element name="bbmd_sectiontype" type="xs:string" />
+                    <xs:element name="bbmd_questiontype" type="xs:string" />
+                    <xs:element name="bbmd_is_from_cartridge" type="xs:boolean" />
+                    <xs:element name="bbmd_is_disabled" type="xs:boolean" />
+                    <xs:element name="bbmd_negative_points_ind" type="xs:string" />
+                    <xs:element name="bbmd_canvas_fullcrdt_ind" type="xs:boolean" />
+                    <xs:element name="bbmd_all_fullcredit_ind" type="xs:boolean" />
+                    <xs:element name="bbmd_numbertype" type="xs:string" />
+                    <xs:element name="bbmd_partialcredit" />
+                    <xs:element name="bbmd_orientationtype" type="xs:string" />
+                    <xs:element name="bbmd_is_extracredit" type="xs:boolean" />
+                    <xs:element name="qmd_absolutescore_max" type="xs:decimal" />
+                    <xs:element name="qmd_weighting" type="xs:decimal" />
+                    <xs:element name="qmd_instructornotes" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="rubric">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="flow_mat">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="material">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="mat_extension">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="mat_formattedtext">
+                                        <xs:complexType>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="class" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="view" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="presentation_material">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="flow_mat">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="material">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="mat_extension">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="mat_formattedtext">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="type" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="class" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="section">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="sectionmetadata">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="bbmd_asi_object_id" type="xs:string" />
+                          <xs:element name="bbmd_asitype" type="xs:string" />
+                          <xs:element name="bbmd_assessmenttype" type="xs:string" />
+                          <xs:element name="bbmd_sectiontype" type="xs:string" />
+                          <xs:element name="bbmd_questiontype" type="xs:string" />
+                          <xs:element name="bbmd_is_from_cartridge" type="xs:boolean" />
+                          <xs:element name="bbmd_is_disabled" type="xs:boolean" />
+                          <xs:element name="bbmd_negative_points_ind" type="xs:string" />
+                          <xs:element name="bbmd_canvas_fullcrdt_ind" type="xs:boolean" />
+                          <xs:element name="bbmd_all_fullcredit_ind" type="xs:boolean" />
+                          <xs:element name="bbmd_numbertype" type="xs:string" />
+                          <xs:element name="bbmd_partialcredit" />
+                          <xs:element name="bbmd_orientationtype" type="xs:string" />
+                          <xs:element name="bbmd_is_extracredit" type="xs:boolean" />
+                          <xs:element name="qmd_absolutescore_max" type="xs:decimal" />
+                          <xs:element name="qmd_weighting" type="xs:decimal" />
+                          <xs:element name="qmd_instructornotes" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="itemmetadata">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="bbmd_asi_object_id" type="xs:string" />
+                                <xs:element name="bbmd_asitype" type="xs:string" />
+                                <xs:element name="bbmd_assessmenttype" type="xs:string" />
+                                <xs:element name="bbmd_sectiontype" type="xs:string" />
+                                <xs:element name="bbmd_questiontype" type="xs:string" />
+                                <xs:element name="bbmd_is_from_cartridge" type="xs:boolean" />
+                                <xs:element name="bbmd_is_disabled" type="xs:boolean" />
+                                <xs:element name="bbmd_negative_points_ind" type="xs:string" />
+                                <xs:element name="bbmd_canvas_fullcrdt_ind" type="xs:boolean" />
+                                <xs:element name="bbmd_all_fullcredit_ind" type="xs:boolean" />
+                                <xs:element name="bbmd_numbertype" type="xs:string" />
+                                <xs:element name="bbmd_partialcredit" type="xs:boolean" />
+                                <xs:element name="bbmd_orientationtype" type="xs:string" />
+                                <xs:element name="bbmd_is_extracredit" type="xs:boolean" />
+                                <xs:element name="qmd_absolutescore_max" type="xs:decimal" />
+                                <xs:element name="qmd_weighting" type="xs:decimal" />
+                                <xs:element name="qmd_instructornotes" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="presentation">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="flow">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="flow">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="response_lid">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="render_choice">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element maxOccurs="unbounded" name="flow_label">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="response_label">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="flow_mat">
+                                                                      <xs:complexType>
+                                                                        <xs:sequence>
+                                                                          <xs:element name="material">
+                                                                            <xs:complexType>
+                                                                              <xs:sequence>
+                                                                                <xs:element name="mat_extension">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:element name="mat_formattedtext">
+                                                                                        <xs:complexType>
+                                                                                          <xs:simpleContent>
+                                                                                            <xs:extension base="xs:string">
+                                                                                              <xs:attribute name="type" type="xs:string" use="required" />
+                                                                                            </xs:extension>
+                                                                                          </xs:simpleContent>
+                                                                                        </xs:complexType>
+                                                                                      </xs:element>
+                                                                                    </xs:sequence>
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                              </xs:sequence>
+                                                                            </xs:complexType>
+                                                                          </xs:element>
+                                                                        </xs:sequence>
+                                                                        <xs:attribute name="class" type="xs:string" use="required" />
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                  </xs:sequence>
+                                                                  <xs:attribute name="ident" type="xs:string" use="required" />
+                                                                  <xs:attribute name="shuffle" type="xs:string" use="required" />
+                                                                  <xs:attribute name="rarea" type="xs:string" use="required" />
+                                                                  <xs:attribute name="rrange" type="xs:string" use="required" />
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="class" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="shuffle" type="xs:string" use="required" />
+                                                      <xs:attribute name="minnumber" type="xs:unsignedByte" use="required" />
+                                                      <xs:attribute name="maxnumber" type="xs:unsignedByte" use="required" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="ident" type="xs:string" use="required" />
+                                                <xs:attribute name="rcardinality" type="xs:string" use="required" />
+                                                <xs:attribute name="rtiming" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element minOccurs="0" name="flow">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="material">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="mat_extension">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="mat_formattedtext">
+                                                                <xs:complexType>
+                                                                  <xs:simpleContent>
+                                                                    <xs:extension base="xs:string">
+                                                                      <xs:attribute name="type" type="xs:string" use="required" />
+                                                                    </xs:extension>
+                                                                  </xs:simpleContent>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="class" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="class" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="class" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="resprocessing">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="outcomes">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="decvar">
+                                        <xs:complexType>
+                                          <xs:attribute name="varname" type="xs:string" use="required" />
+                                          <xs:attribute name="vartype" type="xs:string" use="required" />
+                                          <xs:attribute name="defaultval" type="xs:decimal" use="required" />
+                                          <xs:attribute name="minvalue" type="xs:decimal" use="required" />
+                                          <xs:attribute name="maxvalue" type="xs:decimal" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element maxOccurs="unbounded" name="respcondition">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="conditionvar">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element minOccurs="0" name="other" />
+                                            <xs:element minOccurs="0" name="varequal">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="respident" type="xs:string" use="required" />
+                                                    <xs:attribute name="case" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="setvar">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="variablename" type="xs:string" use="required" />
+                                              <xs:attribute name="action" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="displayfeedback">
+                                        <xs:complexType>
+                                          <xs:attribute name="linkrefid" type="xs:string" use="required" />
+                                          <xs:attribute name="feedbacktype" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="title" type="xs:string" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="scoremodel" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element maxOccurs="unbounded" name="itemfeedback">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="solution">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="solutionmaterial">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="flow_mat">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="flow_mat">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="material">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="mat_extension">
+                                                                <xs:complexType>
+                                                                  <xs:sequence>
+                                                                    <xs:element name="mat_formattedtext">
+                                                                      <xs:complexType>
+                                                                        <xs:attribute name="type" type="xs:string" use="required" />
+                                                                      </xs:complexType>
+                                                                    </xs:element>
+                                                                  </xs:sequence>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="class" type="xs:string" use="required" />
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="class" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="view" type="xs:string" use="required" />
+                                    <xs:attribute name="feedbackstyle" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element minOccurs="0" name="flow_mat">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="flow_mat">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="material">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="mat_extension">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="mat_formattedtext">
+                                                          <xs:complexType>
+                                                            <xs:attribute name="type" type="xs:string" use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="class" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="class" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="ident" type="xs:string" use="required" />
+                              <xs:attribute name="view" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="title" type="xs:string" use="required" />
+                        <xs:attribute name="maxattempts" type="xs:unsignedByte" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="title" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
